@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find Github</title>
     <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon-dark.svg">
-    <link rel="stylesheet" href="main.css">
-    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="dist/css/main.css">
+    <script src="./code.jquery.com_jquery-3.7.0.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-    <header>
+    <header class="hero">
         <div class="container">
-            <h1>Buscador de usuários</h1>
+            <img class="hero__imglogo" src="./dist/images/github.png" alt="GitHub">
             <form class="profile-form">
-                <input type="text" id="username-input" placeholder="Digite o nome de usuário do GitHub" required>
+                <input type="text" class="profile-form__input"  id="username-input" placeholder="Digite o nome de usuário do GitHub" required>
                 <button type="submit" class="btn btn-submit" id="btn-buscar-usuario">
                     <i class="bi bi-search"></i>
                     <span class="d-none spinner-border spinner-border-sm"></span>
@@ -24,7 +24,7 @@
         </div>
     </header>
         <div class="container">
-            <div class="profile-info">
+            <div class="profile">
                 <img class="profile-avatar" src="https://via.placeholder.com/180x180" alt=".">
                 <h1 class="profile-name"><i class="bi bi-question-circle"></i></h1>
                 <h2 class="profile-username"><i class="bi bi-person"></i></h2>
@@ -47,6 +47,6 @@
                 </a> 
             </div>
         </div>
-    <script src="main.js"></script>
+    <script src="./src/scritps/main.js"></script>
 </body>
 </html>

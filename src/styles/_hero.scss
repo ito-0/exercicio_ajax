@@ -1,0 +1,13 @@
+@use 'variables';
+
+.hero {
+    background: variables.$header-color;
+    align-items: center;
+    justify-content: center;
+
+    &__imglogo {
+        max-width: 100px;
+    }
+    
+}
+

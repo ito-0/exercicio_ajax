@@ -1,0 +1,78 @@
+@use 'variables';
+
+.profile {
+    margin-top: 32px;
+    color: variables.$text-color;
+
+
+    &-avatar {
+        border-radius: 50%;
+        margin-bottom: 24px;
+        width: 180px;
+        height: 180px;
+    }
+    
+    &-name {
+        font-size: 30px;
+
+    }
+    
+    &-username {
+        font-size: 20px;
+
+    }
+    
+    &-link {
+        background-color: variables.$button-bg-color;
+        color: variables.$button-text-color;
+        display: inline-block;
+        margin-top: 24px;
+        text-decoration: none;
+        border-radius: 20px;
+        font-size: 40px;
+    }   
+    
+    @media (max-width: 640px) {
+        &-avatar {
+            width: 120px;
+            height: 120px;
+        }
+
+        &-link {
+            margin-top: 12px;
+        }
+    }
+
+    .numbers {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 24px;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+
+        &-item {
+            font-size: 24px;
+            font-weight: bold;
+            color: variables.$button-text-color;
+            list-style: none;
+        }
+        
+        &-item h4 {
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 640px) {
+            display: block;
+            width: 100%;
+            
+            &-item {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}
+
+
